@@ -122,7 +122,7 @@ const generateRates = async () => {
 
     try {
         finalResult.textContent = "Fetching Rates...."
-        const response = await fetch(`https://v6.exchangerate-api.com/v6/2053b77c14455d38d4256444/latest/${fromCurrency}`)
+        const response = await fetch(`https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/${fromCurrency}`)
         const data = await response.json()
 
         const conversionRate = data.conversion_rates[toCurrency]
