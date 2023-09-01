@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="converter-container">
+            <h1>Currency Converter</h1>
+            <div class="input-container">
+                <input class="amount" type="number" value="1" min="1">
+                <select class="fromCurrency">
+                    <!-- options will be inserted through javascript -->
+                </select>
+            </div>
+            <div class="arrow">⬇</div>
+            <div class="input-container">
+                <input class="convertedAmount" type="number" disabled>
+                <select class="toCurrency">
+                    <!-- options will be inserted through javascript -->
+                </select>
+            </div>
+            <div class="conversionRate">
+                <!-- generates by javascript -->
+            </div>
+        </div>
+    </main>
+    <footer>Made with ❤️ by <a href="github.com/nahal-mughal">Nahal Anjum</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
